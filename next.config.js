@@ -1,11 +1,10 @@
-const helmet = require('helmet');
+// next.config.js
 module.exports = {
-  async headers() {
-    return [{
-      source: '/(.*)',
-      headers: [
-        { key: 'Content-Security-Policy', value: helmet.contentSecurityPolicy() }
-      ],
-    }];
+    webpack: (config) => {
+      config.resolve.fallback = { 
+        fs: false, 
+        path: false 
+      };
+      return config;
+    }
   }
-};
