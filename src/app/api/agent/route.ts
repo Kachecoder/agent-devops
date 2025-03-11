@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
-import { runMarketingAgent, handleToolCall } from "@/lib/agent"
-import { auth } from "@/lib/auth"
+import { runMarketingAgent, handleToolCall } from "@/src/lib/agent"
+import { auth } from "@/src/lib/auth"
 
 export async function POST(req: NextRequest) {
   try {

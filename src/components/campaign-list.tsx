@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge"
-import { auth } from "@/lib/auth"
+import { auth } from "@/src/lib/auth"
 
 async function getCampaigns() {
   const session = await auth()

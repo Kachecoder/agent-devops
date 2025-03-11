@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { auth } from "@/lib/auth"
+import { auth } from "@/src/lib/auth"
 import { DollarSign, TrendingUp, Users, BarChart } from "lucide-react"
 
 async function getMarketingStats() {
